@@ -172,3 +172,9 @@ cities = ["tokyo","london", "singapore", "geneva", "toronto"]
 print("This is the list of three cities:")
 for city in cities[:3]:
 	print(city.title())
+
+
+
+
+
+
