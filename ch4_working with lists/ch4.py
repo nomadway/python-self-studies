@@ -173,6 +173,123 @@ print("This is the list of three cities:")
 for city in cities[:3]:
 	print(city.title())
 
+###*********COPYING A LIST***********#############
+
+cars = ["lada", "bmw", "lincoln"]
+
+list_cars = cars[:]
+
+print("My least favourite cars are: ")
+print(cars)
+
+print("\nMy friend loves the following car models: ")
+print(list_cars) 
+
+#########***********EXERCISE**************##########
+# 4-10. Slices: Using one of the programs you wrote in this chapter, add several
+# lines to the end of the program that do the following:
+# ****Print the message The first three items in the list are:. Then use a slice to
+# print the first three items from that program’s list.
+
+# VERSION-1 (Prints one by one)
+# central_asia = ["bishkek", "tashket", "astana", "dushanbe", "ashkhabad"]
+# print("The first three cities in the list are: ")
+# for cities in central_asia[:3]:
+# 	print(cities.title())
+
+# VERSION-2 (Prints as a list)
+# central_asia = ["bishkek", "tashket", "astana", "dushanbe", "ashkhabad"]
+# print("The first three cities in the list are: ")
+# print(central_asia[0:3])
+
+#******Print the message Three items from the middle of the list are:. Use a slice to
+# print three items from the middle of the list.
+
+# central_asia = ["bishkek", "tashket", "astana", "dushanbe", "ashkhabad"]
+# print("\nThree cities in the list are: ")
+# for cities in central_asia[2:]:
+# 	print(cities.title())
+
+
+#***4-11. My Pizzas, Your Pizzas: Start with your program from Exercise 4-1
+# (page 56). Make a copy of the list of pizzas, and call it friend_pizzas .
+# Then, do the following:
+# print("\nThis is the original list: ")
+# my_pizzas = ["mexican", "margarit", "chilli", "pepperoni"]
+# print(my_pizzas)
+
+# print("\nThis is my friend's favourites: ")
+# friend_pizza = my_pizzas[:]
+# print(friend_pizza)
+
+# Add a new pizza to the original list.
+# my_pizzas.append("pineapple")
+# print(my_pizzas)
+
+# my_pizzas.insert(0, "kebab")
+# print(my_pizzas)
+
+#Add a different pizza to the list friend_pizzas.
+# friend_pizza.append("frutella")
+# print(friend_pizza)
+
+
+# Prove that you have two separate lists. Print the message My favorite
+# pizzas are:, and then use a for loop to print the first list. Print the message
+# My friend’s favorite pizzas are:, and then use a for loop to print the sec-
+# ond list. Make sure each new pizza is stored in the appropriate list.
+
+# my_pizzas = ["mexican", "margarit", "chilli", "pepperoni"]
+# friend_pizza = my_pizzas[:]
+# for  mypiz in my_pizzas:
+# 	print("My favourite pizzas are:")
+# 	print(mypiz)
+
+	# print("\nMy friend's favourite pizzas are: ")
+	# print(friend_pizza)
+
+
+
+#########***********TUPLES****************#############
+
+# three_items = (200, "hello", 3)
+# print(three_items[1])
+# print(three_items[0])
+
+
+#***Looping Through All Values in a Tuple*#
+# four4 = (3, "four", 5, "six")
+# for four in four4:
+# 	print(four)
+
+
+########EXERCISE
+#4-13. Buffet: A buffet-style restaurant offers only five basic foods. Think of five simple foods, and store them in a tuple.
+
+#Task-1. Use a for loop to print each food the restaurant offers.
+# print("\nThis is the original list: ")
+# food5 = ("manty", "burger", "hot-dog", "spagetti", "soup")
+# for food in food5:
+# 	print(food)
+
+#Task-2. The restaurant changes its menu, replacing two of the items with different
+# foods. Add a line that rewrites the tuple, and then use a for loop to print
+# each of the items on the revised menu.
+
+# print("\nThis is the revised list: ")
+# food4 = ( "kebab", "hot-dog", "spagetti", "soup")
+# for food in food4:
+# 	print(food)
+
+
+
+
+
+
+
+
+
+
 
 
 
