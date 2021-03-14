@@ -118,19 +118,19 @@
 ###APPENDING TO A FILE
 # file_name = "programming.txt"
 # with open(file_name, "a") as file_object:
-# 	file_object.write("I also love using Python for analysing large data.\n") 
-# 	file_object.write("In addition, I would like to use Python in Cyber Security.\n")
+# 	file_object.write("\nI also love using Python for analysing large data.") 
+# 	file_object.write("\nIn addition, I would like to use Python in Cyber Security.")
 
 
 ##EXERCISE########
 # 10-3. Guest: Write a program that prompts the user for their name. When they
 # respond, write their name to a file called guest.txt.
 
-# message = input("Enter your name: ")
+# name = input("Please enter your full name: ")
 
 # file_name = "guest.txt"
 # with open(file_name, "w") as file_object:
-# 	file_object.write(message)
+# 	file_object.write(name)
 
 
 # 10-4. Guest Book: Write a while loop that prompts users for their name. When
@@ -138,9 +138,56 @@
 # their visit in a file called guest_book.txt. Make sure each entry appears on a
 # new line in the file.
 
+# file_name = "guest_book.txt"
+
+# print("Enter 'quit' when you are finished.")
+
+# while True:
+# 	name = input("\nEnter your full name: ")
+# 	if name == "quit":
+# 		break
+# 	else: 
+# 		with open(file_name, "a") as new_names:
+# 			new_names.write(name + "\n") ##\n adds each new name to a seperate new line
+# 		print("Hello " + name+ ", you've been added to the guest book!")
+
+
 # 10-5. Programming Poll: Write a while loop that asks people why they like
 # programming. Each time someone enters a reason, add their reason to a file
 # that stores all the responses.
+
+##VERSION-1 (simple)
+
+# file_name = "like_programming.txt"
+
+# while True:
+# 		ask = input("\nWhy do you like programming? ")
+
+# 		with open(file_name, "a") as responses:
+# 			responses.write(ask + "\n")
+
+##VERSION-2
+
+# file_name = "like_programming.txt"
+
+# responses = []
+
+# while True:
+# 	ask1 = input("\nDo you like programming? ")
+# 	responses.append(ask1)
+
+# 	ask2 = input("Would you want others to respond? (y/n) ")
+# 	if ask2 != "y":
+# 		break
+
+# with open (file_name, "a") as answers:
+# 	for ask1 in responses:
+# 		answers.write(ask1 + "\n")
+
+
+
+
+
 
 
 
