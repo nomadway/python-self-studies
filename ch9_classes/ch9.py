@@ -88,26 +88,140 @@
 
 # class User:
 
-# 	def __init__(self, name, surname, age, citizenship):
+# 	def __init__(self, name, surname, age, nationality):
 # 		self.name = name
 # 		self.surname = surname
 # 		self.age = age
-# 		self.citizenship = citizenship
+# 		self.nationality = nationality
 
 # 	def describe_user(self):
-# 		print(f"\n{self.name} {self.surname} is {self.age} years old. He is {self.citizenship}.")
+# 		print(f"\n{self.name} {self.surname} is {self.age} years old. He is {self.nationality}.")
 
 # 	def greet_user(self):
-# 		print(f"Hello {self.name} {self.surname}. How are you today?")
+# 		print(f"Hello, {self.name} {self.surname}! How are you today?")
 
-# user1 = User("John", "Lee", 34, "British")
-# user1.describe_user()
-# user1.greet_user()
+# rus = User("Ivan", "Boyko", 37, "Russian")
+# rus.describe_user()
+# rus.greet_user()
 
-# user2 = User("Boris", "Aleksandrovich", 45, "Russian")
-# user2.describe_user()
-# user2.greet_user()
+# italy = User("Michael", "Corleone", 39, "Italian")
+# italy.describe_user()
+# italy.greet_user()
 
-# user3 = User("Jack", "Ma", 37, "Chinese")
-# user3.describe_user()
-# user3.greet_user()
+# japan=User("Meiji", "Samurai", 45, "Japanese")
+# japan.describe_user()
+# japan.greet_user()
+
+
+#####*******WORKING WITH CLASSES AND INSTANCES 
+
+# class Car:
+
+# 	def __init__(self, make, model, year):
+# 		self.make = make
+# 		self.model = model
+# 		self.year = year 
+
+# 	def get_descriptive_name(self):
+# 		car_name = f"{self.make} {self.model} {self.year}"
+# 		return car_name.title()
+
+
+# my_car = Car("Bentley", "B1", "2021")
+# print(my_car.get_descriptive_name())
+
+####***Setting a Default Value for an Attribute****######
+
+# class Car:
+
+# 	def __init__(self, make, model, year):
+# 		self.make = make
+# 		self.model = model
+# 		self.year = year 
+# 		self.odometer = 0
+
+# 	def get_descriptive_name(self):
+# 		car_name = f"{self.make} {self.model} {self.year}"
+# 		return car_name.title()
+
+# 	def read_odometer(self):
+# 		print(f"This car has {self.odometer} km on it.")
+
+
+# my_car = Car("Bentley", "B1", "2021")
+# print(my_car.get_descriptive_name())
+# my_car.read_odometer()
+
+#####******Modifying an Attribute’s Value Directly (odometer km)
+
+# class Car:
+
+# 	def __init__(self, make, model, year):
+# 		self.make = make
+# 		self.model = model
+# 		self.year = year 
+# 		self.odometer = 0
+
+# 	def get_descriptive_name(self):
+# 		car_name = f"{self.make} {self.model} {self.year}"
+# 		return car_name.title()
+
+# 	def read_odometer(self):
+# 		print(f"This car has {self.odometer} km on it.")
+
+
+# my_car = Car("Bentley", "B1", "2021")
+# print(my_car.get_descriptive_name())
+
+# my_car.odometer = 130000
+# my_car.read_odometer()
+
+
+
+###****Modifying an Attribute’s Value Through a Method (odometer km). Add new update_odometer method
+
+# class Car:
+
+# 	def __init__(self, make, model, year):
+# 		self.make = make
+# 		self.model = model
+# 		self.year = year 
+# 		self.odometer = 0
+
+# 	def get_descriptive_name(self):
+# 		car_name = f"{self.make} {self.model} {self.year}"
+# 		return car_name.title()
+
+# 	def read_odometer(self):
+# 		print(f"This car has {self.odometer} km on it.")
+
+# 	def update_odometer(self, km):
+# 		self.odometer = km
+
+
+# my_car = Car("Bentley", "B1", "2021")
+# print(my_car.get_descriptive_name())
+
+# my_car.update_odometer(5000)
+# my_car.read_odometer()
+
+
+
+######******INHERITENCE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
